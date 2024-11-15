@@ -1,0 +1,181 @@
+.berry {
+    color: #b7337a;
+}
+
+a.active {
+    color: #b7337a !important;
+}
+
+.hero-height {
+    height: 70vh !important;
+}
+
+@media (max-width: 1100px) {
+    .hero-height {
+        height: 60vh !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-height {
+        height: 50vh !important;
+    }
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+.mobile-about-img {
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+.hr-box {
+    border-top: 1px solid #b7337a;
+    opacity: 0.5;
+}
+
+.smooth-img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.swirl-background-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.swirl-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/swirl.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.swirl-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.notice-landing {
+    font-size: 120% !important;
+}
+
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.landing-img {
+    width: 33.33%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.landing-text {
+    width: 66.67%;
+    padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .landing-container {
+        flex-direction: column;
+    }
+
+    .landing-img {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .landing-text {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+
+.hero-slider .slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slider-image:first-child {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.wrapper {
+    z-index: 2;
+    position: relative;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.narrow {
+    padding: 0 15vw;
+}
+
+@media (max-width: 767px) {
+    .narrow {
+        padding: 0;
+    }
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
